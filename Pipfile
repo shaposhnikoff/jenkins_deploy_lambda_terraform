@@ -9,5 +9,5 @@ boto3 = "*"
 
 [dev-packages]
 
-[requires]
-python_version = "3.8"
+#[requires]
+#python_version = "3.8"
