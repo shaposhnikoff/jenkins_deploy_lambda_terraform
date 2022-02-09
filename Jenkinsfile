@@ -34,15 +34,6 @@ pipeline {
                 )
             }
         }
-#        stage("Deploy Lambda to Localstack using Terraform") {
-#            steps {
-#                sh 'echo $PWD'
-#                sh 'cd ./aws_local && terraform init -input=false'
-#                sh 'echo $PWD'
-#                sh 'cd ./aws_local && terraform plan -out aws_local.plan -input=false'
-#                sh 'cd ./aws_local && terraform apply aws_local.plan'
-#            }
-#        }
         stage("Deploy Lambda to AWS Cloud using Terraform ???") {
             steps {
                 timeout(time: 60, unit: 'SECONDS') {
