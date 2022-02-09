@@ -36,9 +36,6 @@ pipeline {
         }
         stage("Deploy Lambda to AWS Cloud using Terraform ???") {
             steps {
-                timeout(time: 10, unit: 'SECONDS') {
-                    input 'Deploy to AWS Cloud?'
-                }
                 sh 'echo $PWD'
                 sh 'cd ./aws_cloud && terraform init -input=false'
                 sh 'echo $PWD'
