@@ -1,5 +1,8 @@
 pipeline {
     agent any
+      options {
+    ansiColor('xterm')
+    }
     environment {
         LAMBDA_TGT_ZIP = "src.zip"
     }
